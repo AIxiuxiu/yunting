@@ -707,7 +707,7 @@
                 }))), function(e) {
                     return te.apply(this, arguments)
                 }),
-                getDemandDetail: (ee = Object(a.a)(regeneratorRuntime.mark(async (function e(t) {
+                getDemandDetail: (ee = Object(a.a)(regeneratorRuntime.mark((async function e(t) {
                     async function downFile(info) {
                         try {
                             console.log('下载' + info.name + info.playUrlHigh);
