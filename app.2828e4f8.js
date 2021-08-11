@@ -710,8 +710,9 @@
                 getDemandDetail: (ee = Object(a.a)(regeneratorRuntime.mark((async function e(t) {
                     async function downFile(info) {
                         try {
-                            console.log('下载' + info.name + info.playUrlHigh);
-                            let res = await fetch(info.playUrlHigh);
+                            let playUrl = info.playUrlHigh || info.playUrl || info.playUrlHighEncode || info.playUrlEncode;
+                            console.log('下载' + info.name + playUrl);
+                            let res = await fetch(playUrl);
                             let blob = await res.blob();
                             const a = document.createElement('a');
                             document.body.appendChild(a)
