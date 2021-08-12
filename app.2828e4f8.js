@@ -743,7 +743,7 @@
                         apiUrl: "/wifimusicbox/demand/detail",
                         method: "POST"
                     });
-                    for (let index = 1; index < onePageInfo.totalPage; index++) {
+                    for (let index = t.pageIndex + 1; index < onePageInfo.totalPage; index++) {
                         getMp3(index);
                     }
 
@@ -2602,4 +2602,3 @@
     },
     f589: function(e, t, n) {}
 });
-
