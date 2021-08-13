@@ -738,6 +738,7 @@
                             await downFile(result.con[n]);
                         }
                     }
+                    t.paySongFlag = 1; //已付费标志
                     let onePageInfo = await y({
                         data: k({}, t),
                         apiUrl: "/wifimusicbox/demand/detail",
